@@ -3,6 +3,7 @@ import LogoTitle from '../../assets/images/3dm.png';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters/animatedLetter';
 import Typed from 'react-typed';
+import Logo from './Logo/logo';
 
 import { useState, useEffect } from 'react';
 
@@ -56,6 +57,7 @@ const Home = () => {
         <h2></h2>
         <Link to="/contact" className='flat-button'>CONTACT ME</Link>
       </div>
+      <Logo />
     </div>
   )
 };
