@@ -50,8 +50,8 @@ const Home = () => {
         <Typed
         className='typed-text'
         strings={typedArray}
-        typeSpeed={30}
-        backSpeed={50}
+        typeSpeed={50}
+        backSpeed={75}
         loop
         /> } 
         <h2></h2>
