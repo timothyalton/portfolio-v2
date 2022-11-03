@@ -1,5 +1,15 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters/animatedLetter';
+import { faGitAlt, faSquareJs, faReact} from '@fortawesome/free-brands-svg-icons';
+import ReactLogo from '../../assets/images/React-icon.png';
+import RubyLogo from '../../assets/images/rubygem.png';
+import RubyOnRailsLogo from '../../assets/images/ruby-on-rails.png';
+import SQLLogo from '../../assets/images/sql-logo.png';
+
+
+
+
 import './about.scss';
 
 
@@ -39,6 +49,28 @@ const About = () => {
           impact the Tech community by contributing to meaningful projects while offering the knowledge I have picked up along the way to anyone who shares the
           same passion. 
         </p>
+      </div>
+      <div className="stage-cube-container">
+        <div className="cubespinner">
+          <div className="face1">
+            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+          </div>
+          <div className="face2">
+            <img src={RubyLogo} alt="Ruby" />
+          </div>
+          <div className="face3">
+            <img src={RubyOnRailsLogo} alt="RubyOnRails" />
+          </div>
+          <div className="face4">
+            <img src={SQLLogo} alt="SQL" />
+          </div>
+          <div className="face5">
+            <FontAwesomeIcon icon={faSquareJs} color="#EFD81D" />
+          </div>
+          <div className="face6">
+            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+          </div>
+        </div>
       </div>
     </div>
   )
