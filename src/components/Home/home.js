@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters/animatedLetter';
 import Typed from 'react-typed';
 import Logo from './Logo/logo';
+import Loader from 'react-loaders'
 
 import { useState, useEffect } from 'react';
 
@@ -27,6 +28,7 @@ const Home = () => {
   }, [])
 
   return (
+    <>
     <div className="container home-page">
       <div className="text-zone">
         <h1>
@@ -59,6 +61,8 @@ const Home = () => {
       </div>
       <Logo />
     </div>
+    <Loader type="line-scale-pulse-out" />
+    </>
   )
 };
 

@@ -6,6 +6,7 @@ import ReactLogo from '../../assets/images/React-icon.png';
 import RubyLogo from '../../assets/images/rubygem.png';
 import RubyOnRailsLogo from '../../assets/images/ruby-on-rails.png';
 import SQLLogo from '../../assets/images/sql-logo.png';
+import Loader from 'react-loaders';
 
 
 
@@ -26,6 +27,7 @@ const About = () => {
   
 
   return (
+    <>
     <div className='container about-page'>
       <div className='text-zone'>
         <h1>
@@ -73,6 +75,8 @@ const About = () => {
         </div>
       </div>
     </div>
+    <Loader type="line-scale-pulse-out" />
+    </>
   )
 };
 
